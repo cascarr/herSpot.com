@@ -13,6 +13,7 @@ Let's tell Laravel the URIs it should respond to and give it the controller to c
 |
 */
 
+
 Route::get('/', function () {
     return view('index');
 });
@@ -25,3 +26,6 @@ Route::get('edit/{id}', 'MemberController@edit');
 Route::post('edit/{id}', 'MemberController@update');
 
 Route::delete('delete/{id}', 'MemberController@destroy');
+
+
+//Route::resource('members', 'MemberController'); => Should use this
