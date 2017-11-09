@@ -1,1 +1,1 @@
-var app = angular.module('memberRecords',[]).constant('API_URL', 'http://herspot.dev/');
+var app = angular.module('memberRecords',[]).constant('API_URL', window.location.origin + '/');

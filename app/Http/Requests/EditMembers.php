@@ -27,8 +27,8 @@ class EditMembers extends FormRequest
             // Setting the rules for members data edit
             'name'      =>  'required|alpha|max:100',
             'address'   =>  'required|alpha|max:300',
-            'age'       =>  'required|numeric|digits_between:1,2',
-            'profile_img' => 'image|mimes:png,jpeg,gif|max:10000'
+            'age'       =>  'required|numeric|digits_between:1,99',
+//            'img' => 'image|mimes:png,jpeg,gif|max:10000'
         ];
     }
 }
